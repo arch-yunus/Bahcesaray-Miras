@@ -48,9 +48,33 @@ Bu dosya, Kırım Tatar edebiyatının, fikir dünyasının ve milli mücadelesi
 > "Kırım – bizim yeşil beşik, / Altın saray, nurlu eşik."
 > — *Kırımım şiirinden*
 
+> "Tuvğan tilni unutmañız, o Kırım'nın bağıdır, / Kim ki tilini unuttı, vatanından ayrıdır."
+> — *Yiğitlerge*
+
 ### Eşref Şemi-zade
 > "Közyaş Divarı'nın taşları dile gelse, Kırım'ın çektiği çileleri dağlar taşlar taşıyamazdı."
 > — *Közyaş Divarı*
+
+> "Bir kün kelir bu divarlar yıkılır, / Milletimniñ zincirleri kırılır."
+> — *Közyaş Divarı*
+
+### Şakir Selim
+> "Kırım demek – yeşil beşik demektir, / Kırım demek – ana sütü demektir."
+> — *Kırım şiirinden*
+
+> "Vatan sevgisi imandandır derler, Kırım'a hizmet etmek her Kırım Tatarı için bir şereftir."
+> — *Yıldız Dergisi Başyazılarından*
+
+---
+
+## 🪕 Aşık Edebiyatı ve Klasik Şiir
+
+### Aşık Ümer
+> "Al yeşil giyinip süslenip çıksın, / Gözleve'nin güzel elâ gözlüsü."
+> — *Gözleve Koşması*
+
+> "Âşık olanların aklı perîşan, / Gözleve'dir vatanımız bî-gümân."
+> — *Gözleve Koşması*
 
 ---
 
