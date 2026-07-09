@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../Multimedya/Gorsel_Arsiv/culture_literature_banner.png" alt="Edebiyat Banner" width="100%">
+</p>
+
 # ✒️ Kırım Tatar Edebi Alıntıları
 
 Bu dosya, Kırım Tatar edebiyatının, fikir dünyasının ve milli mücadelesinin önde gelen isimlerinin hafızalarda yer etmiş şiir mısralarını, edebi ve felsefi alıntılarını bir araya getirir.

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../Multimedya/Gorsel_Arsiv/culture_literature_banner.png" alt="Edebiyat Banner" width="100%">
+</p>
+
 # 📖 Edebiyat
 
 Bu dizin, Kırım Tatar edebiyatının seçkin şiirlerini, destanlarını, tarihi süreli yayınlarını (başta Tercüman Gazetesi olmak üzere) ve edebiyat dünyamıza yön vermiş yazar ile şairlerin biyografilerini barındırır.

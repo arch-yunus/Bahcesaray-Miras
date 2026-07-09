@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="Multimedya/Gorsel_Arsiv/project_header_banner.png" alt="Bahcesaray Miras Banner" width="100%">
+</p>
 
 # 🕌 Bahcesaray-Miras
 
