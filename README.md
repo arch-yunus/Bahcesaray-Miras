@@ -26,7 +26,7 @@ Bir milletin varoluş mücadelesini sadece statik belgelerle değil, modern veri
 
 Dilin ve kültürün kaybolmaması adına, depomuz araştırmayı ve otomasyonu kolaylaştıran modüler bir mimariyle tasarlanmıştır:
 
-* **`/Edebiyat`**: Şiirler, destanlar, Tercüman gazetesi arşivi ve yazar biyografileri.
+* **`/Edebiyat`**: Şiirler, destanlar, Tercüman gazetesi arşivi, yazar biyografileri ve [Edebi Alıntılar](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Edebiyat/Edebi_Alintilar.md).
 * **`/Sanat_ve_Zanaat`**: Ahşap/taş oymacılığı, mimari detaylar ve Tarak-Tamga'nın köken analizleri.
 * **`/Mitoloji_ve_Folklor`**: Çora Batır, Altın Beşik gibi destanların varyasyonları, halk inançları.
 * **`/Tarih_ve_Surgun`**: Hanlık dönemi siyasi belgeleri, tarihi makaleler ve 1944 Sürgünü'ne (Sürgünlik) dair sözlü tarih çalışmaları.
@@ -34,6 +34,9 @@ Dilin ve kültürün kaybolmaması adına, depomuz araştırmayı ve otomasyonu 
 * **`/Veri_Setleri`**: Geliştiriciler için hazırlanmış makine okumasına uygun formatlanmış kültürel metin verileri.
 
 ## ⚙️ Teknik Altyapı ve Veri Standartları
+
+> *"İş bilmek, iş görmek, iş başarmak gerek. Boş laf karın doyurmaz."*
+> — **İsmail Gaspıralı** (Toplumsal Kalkınma Yazıları)
 
 Bu arşivdeki verilerin uzun ömürlü olması için:
 
@@ -52,6 +55,9 @@ Bu arşivdeki verilerin uzun ömürlü olması için:
 * [ ] **Faz 4:** Dijitalleştirilmiş metinlerin açık bir "Kültür API'si" altyapısına dönüştürülmesi.
 
 ## 🤝 Katkı Rehberi (Contributing)
+
+> *"Dilde, fikirde, işte birlik!"*
+> — **İsmail Gaspıralı** (Tercüman Gazetesi şiarı)
 
 Bu arşiv kolektif bir hafızadır. Yeni belgeler eklemek, tarihi metinleri transkript etmek veya var olan araştırmaları zenginleştirmek için herkesin katkısına açıktır:
 
