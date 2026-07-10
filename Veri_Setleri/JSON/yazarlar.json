@@ -1,0 +1,65 @@
+[
+  {
+    "ad": "Numan Çelebicihan",
+    "dogum_yili": 1885,
+    "olum_yili": 1918,
+    "dogum_yeri": "Büyük Suna Hacı, Kırım",
+    "unvan": "Hükümet Reisi, Müftü, Şair",
+    "ana_eserler": ["Ant Etkenmen", "Qarılğaçlar Duası"],
+    "hakkinda": "Kırım Tatarı siyasetçi, din adamı, şair ve yazardır. Birinci Kırım Tatar Kurultayı'nın başkanı ve Kırım Halk Cumhuriyeti'nin ilk başbakanıdır."
+  },
+  {
+    "ad": "İsmail Bey Gaspıralı",
+    "dogum_yili": 1851,
+    "olum_yili": 1914,
+    "dogum_yeri": "Avcıköy, Kırım",
+    "unvan": "Gazeteci, Yayıncı, Eğitimci, Fikir Adamı",
+    "ana_eserler": ["Tercüman Gazetesi", "Usul-ü Cedid Ders Kitapları"],
+    "hakkinda": "Kırım Tatarı gazeteci, yazar ve yayıncıdır. Türk dünyasında modernleşme, eğitim reformu ve fikir birliği hareketlerinin öncüsüdür. 'Dilde, fikirde, işte birlik' şiarıyla tanınır."
+  },
+  {
+    "ad": "Bekir Sıtkı Çoban-zade",
+    "dogum_yili": 1893,
+    "olum_yili": 1937,
+    "dogum_yeri": "Karasubazar, Kırım",
+    "unvan": "Profesör, Türkolog, Dil Bilimci, Şair",
+    "ana_eserler": ["Tuvğan Til", "Türk Dillerinin Karşılaştırmalı Dilbilgisi"],
+    "hakkinda": "Kırım Tatarı şair, Türkolog ve dil bilimcidir. Modern Kırım Tatar şiirinin en önemli isimlerindendir ve karşılaştırmalı Türk dilbilimi çalışmalarının kurucularındandır."
+  },
+  {
+    "ad": "Cengiz Dağcı",
+    "dogum_yili": 1919,
+    "olum_yili": 2011,
+    "dogum_yeri": "Kızıltaş, Kırım",
+    "unvan": "Roman Yazarı",
+    "ana_eserler": ["Korkunç Yıllar", "Yurdunu Kaybeden Adam", "Onlar da İnsandı"],
+    "hakkinda": "Kırım Tatarı roman yazarıdır. Eserlerini Türkçe kaleme alarak Kırım Tatar halkının hüzünlü tarihini ve 1944 Sürgünü'nü dünyaya duyurmuştur."
+  },
+  {
+    "ad": "Amdi Giraybay",
+    "dogum_yili": 1901,
+    "olum_yili": 1930,
+    "dogum_yeri": "Kırım",
+    "unvan": "Şair, Kültür Adamı",
+    "ana_eserler": ["Yiğitlerge", "Kırımım"],
+    "hakkinda": "Kırım Tatarı şairdir. Şiirlerinde gençliği eğitime, uyanışa ve vatan sevgisine davet etmiştir. Stalin rejiminin baskısıyla kurşuna dizilmiştir."
+  },
+  {
+    "ad": "Eşref Şemi-zade",
+    "dogum_yili": 1908,
+    "olum_yili": 1978,
+    "dogum_yeri": "Közleve, Kırım",
+    "unvan": "Şair, Edebiyat Eleştirmeni",
+    "ana_eserler": ["Közyaş Divarı"],
+    "hakkinda": "Kırım Tatarı şair ve edebiyat eleştirmenidir. Kırım Tatar edebiyatının anıtsal eseri 'Közyaş Divarı' destanının yazarıdır."
+  },
+  {
+    "ad": "Aşık Ümer",
+    "dogum_yili": 1651,
+    "olum_yili": 1707,
+    "dogum_yeri": "Gözleve, Kırım",
+    "unvan": "Halk Şairi, Saz Aşığı",
+    "ana_eserler": ["Aşık Ümer Divanı", "Gözleve Koşması"],
+    "hakkinda": "Kırım Gözleve doğumlu Klasik Türk halk edebiyatı ve saz şiiri geleneğinin en büyük, en üretken şairlerinden (aşıkları) biridir."
+  }
+]
