@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahçesaray Miras - Kırım Tatar Dijital Kültür Portalı</title>
+  <meta name="description" content="Kırım Tatar halkının zengin edebi eserlerini, sanatını, halk folklorunu, mimarisini ve tarihi mirasını dijital ortamda koruyan ve sunan interaktif kültür portalı.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Canvas for Subtle Particle / Gradient effect -->
+  <div class="bg-blur-container">
+    <div class="blur-blob blur-blue"></div>
+    <div class="blur-blob blur-gold"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#" class="logo-area" id="nav-logo-link">
+        <svg class="tarak-tamga-logo" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="50" y1="22" x2="50" y2="78" />
+          <path d="M 28 35 V 27 C 28 22, 17 22, 17 27 V 35 C 17 63, 50 78, 50 78" />
+          <path d="M 72 35 V 27 C 72 22, 83 22, 83 27 V 35 C 83 63, 50 78, 50 78" />
+        </svg>
+        <span class="logo-text">Bahçesaray <span class="accent-gold">Miras</span></span>
+      </a>
+      
+      <nav class="nav-bar">
+        <button class="menu-toggle" id="menu-toggle-btn" aria-label="Menüyü Aç">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="nav-menu-list">
+          <li><a href="#kesfet" class="nav-link active" data-tab="kesfet"><i class="fa-solid fa-compass"></i> Keşfet</a></li>
+          <li><a href="#edebiyat" class="nav-link" data-tab="edebiyat"><i class="fa-solid fa-book-open"></i> Edebiyat</a></li>
+          <li><a href="#yazarlar" class="nav-link" data-tab="yazarlar"><i class="fa-solid fa-feather"></i> Yazarlar</a></li>
+          <li><a href="#tarih" class="nav-link" data-tab="tarih"><i class="fa-solid fa-landmark"></i> Tarih</a></li>
+          <li><a href="#kultur" class="nav-link" data-tab="kultur"><i class="fa-solid fa-mosaic"></i> Kültür & Sanat</a></li>
+          <li><a href="#gelistirici" class="nav-link" data-tab="gelistirici"><i class="fa-solid fa-code"></i> NLP & Veri</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Kırım Tatar Kültürel Mirasının Dijital Hafızası</h1>
+      <p class="hero-subtitle">İsmail Bey Gaspıralı'nın <em>"Dilde, fikirde, işte birlik"</em> şiarıyla, yüzyılların birikimini geleceğe taşıyoruz.</p>
+      
+      <!-- Global Search Bar -->
+      <div class="search-container">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="global-search-input" placeholder="Şiir, yazar, destan, mimari veya tarihi olay ara...">
+          <button class="clear-search-btn" id="clear-search-btn" style="display:none;"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="search-results-dropdown" class="search-results-dropdown"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="main-content">
+
+    <!-- 1. KEŞFET (HOME) -->
+    <section id="kesfet" class="tab-pane active">
+      <div class="stats-grid">
+        <div class="stat-card" data-target="edebiyat">
+          <div class="stat-icon"><i class="fa-solid fa-scroll"></i></div>
+          <div class="stat-info">
+            <h3 class="stat-value" id="stat-poems-count">5</h3>
+            <p class="stat-label">Seçkin Şiir / Eser</p>
+          </div>
+        </div>
+        <div class="stat-card" data-target="yazarlar">
+          <div class="stat-icon"><i class="fa-solid fa-pen-fancy"></i></div>
+          <div class="stat-info">
+            <h3 class="stat-value" id="stat-authors-count">7</h3>
+            <p class="stat-label">Kültür ve Edebiyat Öncüsü</p>
+          </div>
+        </div>
+        <div class="stat-card" data-target="tarih">
+          <div class="stat-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+          <div class="stat-info">
+            <h3 class="stat-value">5</h3>
+            <p class="stat-label">Tarihi Kilometre Taşı</p>
+          </div>
+        </div>
+        <div class="stat-card" data-target="kultur">
+          <div class="stat-icon"><i class="fa-solid fa-gem"></i></div>
+          <div class="stat-info">
+            <h3 class="stat-value">5</h3>
+            <p class="stat-label">Geleneksel Sanat ve Mit</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Welcome and Highlight Columns -->
+      <div class="split-layout">
+        <div class="split-col-main glass-card">
+          <h2>🕌 Bahçesaray Miras'a Hoş Geldiniz</h2>
+          <p>Bu portal; Kırım Tatar halkının zengin kültürel mirasını, edebi eserlerini, halk folklorunu ve mimari dokusunu interaktif bir ortamda korumak ve sunmak amacıyla hazırlanmıştır.</p>
+          <p><strong>Neler yapabilirsiniz?</strong></p>
+          <ul class="welcome-list">
+            <li><i class="fa-solid fa-chevron-right accent-blue"></i> <strong>Edebiyat</strong> sekmesinde orijinal Kırım Tatarca şiirleri satır satır Türkçe çevirileriyle eş zamanlı inceleyebilirsiniz.</li>
+            <li><i class="fa-solid fa-chevron-right accent-blue"></i> <strong>Yazarlar</strong> sekmesinde fikir ve edebiyat insanlarının biyografilerini ve başyapıtlarını keşfedebilirsiniz.</li>
+            <li><i class="fa-solid fa-chevron-right accent-blue"></i> <strong>Tarih</strong> sekmesinde Kırım Hanlığı'ndan sürgün yıllarına uzanan tarihi çizgiyi okuyabilirsiniz.</li>
+            <li><i class="fa-solid fa-chevron-right accent-blue"></i> <strong>NLP &amp; Veri</strong> sekmesinde yapay zeka ve dil işleme projeleri için veri setlerini indirebilir ve kelime frekans analizi modülünü deneyebilirsiniz.</li>
+          </ul>
+        </div>
+        
+        <div class="split-col-side glass-card">
+          <h3><i class="fa-solid fa-quote-left accent-gold"></i> Kültür Hazinesinden İnciler</h3>
+          <div class="quote-slider" id="quote-slider-container">
+            <!-- Dynamic quotes will be loaded here -->
+            <div class="quote-slide active">
+              <blockquote class="quote-text">"Ant etkenmen, söz bergenmen millet içün ölmege, / Bilip, körip milletimniñ köz yaşını silmege..."</blockquote>
+              <cite class="quote-author">— Numan Çelebicihan, <em>Ant Etkenmen</em></cite>
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button id="prev-quote" aria-label="Önceki Alıntı"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="next-quote" aria-label="Sonraki Alıntı"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. EDEBİYAT & ŞİİRLER -->
+    <section id="edebiyat" class="tab-pane">
+      <div class="poetry-workspace">
+        <!-- Poem Selector Sidebar -->
+        <aside class="poetry-sidebar glass-card">
+          <h3><i class="fa-solid fa-feather-pointed"></i> Eser Seçiniz</h3>
+          <ul class="poem-list" id="poem-selector-list">
+            <!-- Loaded dynamically -->
+          </ul>
+        </aside>
+        
+        <!-- Interactive Side-by-side Reader -->
+        <div class="poetry-reader-container">
+          <div class="poem-header-card glass-card">
+            <div class="poem-title-group">
+              <h2 id="reader-poem-title">Ant Etkenmen</h2>
+              <h3 id="reader-poem-title-tr" class="accent-gold">And Etmişim</h3>
+            </div>
+            <div class="poem-meta-tags">
+              <span class="meta-tag"><i class="fa-solid fa-user"></i> <span id="reader-poem-author">Numan Çelebicihan</span></span>
+              <span class="meta-tag"><i class="fa-solid fa-calendar"></i> <span id="reader-poem-year">1917</span></span>
+              <span class="meta-tag"><i class="fa-solid fa-tag"></i> <span id="reader-poem-genre">Milli Marş / Şiir</span></span>
+            </div>
+          </div>
+          
+          <div class="poem-bilingual-body glass-card">
+            <div class="poem-column original-column">
+              <h4>Kırım Tatarca Orijinal</h4>
+              <div class="lines-container" id="reader-original-lines">
+                <!-- Loaded dynamically -->
+              </div>
+            </div>
+            <div class="poem-column translation-column">
+              <h4>Türkiye Türkçesi</h4>
+              <div class="lines-container" id="reader-translated-lines">
+                <!-- Loaded dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. YAZARLAR & BİYOGRAFİLER -->
+    <section id="yazarlar" class="tab-pane">
+      <div class="section-header">
+        <h2>✒️ Kültür ve Edebiyat Öncüleri</h2>
+        <p>Kırım Tatar fikir hayatına, basınına ve edebi uyanışına yön vermiş tarihi şahsiyetler.</p>
+      </div>
+      <div class="authors-grid" id="authors-grid-container">
+        <!-- Loaded dynamically -->
+      </div>
+    </section>
+
+    <!-- 4. TARİH & SÜRGÜN -->
+    <section id="tarih" class="tab-pane">
+      <div class="section-header">
+        <h2>⏳ Tarihi Kilometre Taşları</h2>
+        <p>Kırım Tatar halkının bağımsızlık döneminden sürgüne ve milli mücadeleye uzanan tarihi süreci.</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">1441</span>
+            <h3>Kırım Hanlığı'nın Kuruluşu</h3>
+            <p>I. Hacı Giray Han önderliğinde Altın Orda Devleti'nden bağımsız olarak kurulan devlet, Bahçesaray'ı başkent yaparak Karadeniz'in kuzeyinde büyük bir medeniyet merkezi oluşturdu.</p>
+            <button class="read-more-btn" data-article="kirim-hanligi"><i class="fa-solid fa-book-open"></i> Detaylı Oku</button>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">1783</span>
+            <h3>Rusya Tarafından İlk İlhak</h3>
+            <p>Rus Çariçesi II. Katerina'nın tek taraflı ilhak kararı ile bağımsız Kırım Hanlığı yıkıldı. Kırım Tatarları için kitlesel göçler, kültürel baskılar ve asimilasyon dönemi başladı.</p>
+            <button class="read-more-btn" data-article="kirim-hanligi"><i class="fa-solid fa-book-open"></i> Detaylı Oku</button>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">18 Mayıs 1944</span>
+            <h3>Sürgünlik (Kara Gün)</h3>
+            <p>Stalin rejimi tarafından tüm Kırım Tatar nüfusu bir gecede hayvan vagonlarına doldurularak Orta Asya ve Sibirya'ya sürgün edildi. Nüfusun neredeyse yarısı yollarda ve sürgün yerlerinde hayatını kaybetti.</p>
+            <button class="read-more-btn" data-article="surgun-1944"><i class="fa-solid fa-book-open"></i> Detaylı Oku</button>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">1989</span>
+            <h3>Vatana Dönüş Hareketi</h3>
+            <p>Mustafa Abdülcemil Kırımoğlu ve milli hareket liderlerinin öncülüğünde yürütülen barışçıl insan hakları mücadelesi sonucunda Kırım Tatarları kitlesel olarak anavatanları Kırım'a dönmeye başladı.</p>
+            <button class="read-more-btn" data-article="milli-hareket"><i class="fa-solid fa-book-open"></i> Detaylı Oku</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. KÜLTÜR & SANAT (Mitoloji, Mimari, Kuyumculuk vb.) -->
+    <section id="kultur" class="tab-pane">
+      <div class="section-header">
+        <h2>🏺 Kültür, Sanat ve Folklor Hazineleri</h2>
+        <p>Destanlardan mimari yapılara, el sanatlarından geleneksel adetlere uzanan kültür hazinesi.</p>
+      </div>
+
+      <div class="kultur-tabs-nav">
+        <button class="kultur-tab-btn active" data-kultur="mitoloji"><i class="fa-solid fa-dragon"></i> Mitoloji &amp; Destanlar</button>
+        <button class="kultur-tab-btn" data-kultur="sanat"><i class="fa-solid fa-palette"></i> El Sanatları &amp; Semboller</button>
+        <button class="kultur-tab-btn" data-kultur="mimari"><i class="fa-solid fa-archway"></i> Mimari Miras</button>
+        <button class="kultur-tab-btn" data-kultur="gelenek"><i class="fa-solid fa-masks-theater"></i> Gelenek &amp; Adetler</button>
+      </div>
+
+      <div class="kultur-tabs-content">
+        <!-- 5.1 Mitoloji & Destanlar -->
+        <div class="kultur-pane active" id="kultur-mitoloji">
+          <div class="kultur-grid">
+            <div class="glass-card kultur-card">
+              <div class="kultur-card-icon"><i class="fa-solid fa-shield-halved accent-gold"></i></div>
+              <h3>Çora Batır Destanı</h3>
+              <p>Kırım Hanlığı'nın Kazan Hanlığı'na yardım ettiği dönemde yaşayan kahraman Çora Batır'ın Rus işgaline karşı verdiği epik mücadeleyi anlatan, Kırım Tatar folklorunun en önemli yiğitlik destanıdır.</p>
+              <button class="read-more-btn" data-article="cora-batir"><i class="fa-solid fa-book-open"></i> Destanı Oku</button>
+            </div>
+            
+            <div class="glass-card kultur-card">
+              <div class="kultur-card-icon"><i class="fa-solid fa-crown accent-blue"></i></div>
+              <h3>Altın Beşik Efsanesi</h3>
+              <p>Kırım'ın dağlık bölgelerinde saklandığına inanılan, hanedanın gücünü, birliğini ve halkın hürriyetini simgeleyen kutsal altın beşiğin efsanesi. Kırım'ın düşman eline geçmemesinin sembolüdür.</p>
+              <button class="read-more-btn" data-article="altin-besik"><i class="fa-solid fa-book-open"></i> Efsaneyi Oku</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5.2 El Sanatları & Semboller -->
+        <div class="kultur-pane" id="kultur-sanat">
+          <div class="kultur-grid">
+            <div class="glass-card kultur-card">
+              <div class="kultur-card-icon"><i class="fa-solid fa-shapes accent-gold"></i></div>
+              <h3>Tarak-Tamga Sembolü</h3>
+              <p>Giray Hanedanı'nın mülkiyet damgası olarak doğan ve günümüzde gök mavisi bayrağın üzerinde parıldayan adalet, denge ve devlet egemenliği sembolünün derinlemesine anlamı.</p>
+              <button class="read-more-btn" data-article="tarak-tamga"><i class="fa-solid fa-book-open"></i> Analizi Oku</button>
+            </div>
+            
+            <div class="glass-card kultur-card">
+              <div class="kultur-card-icon"><i class="fa-solid fa-gem accent-blue"></i></div>
+              <h3>Telkari (Filigran) Sanatı</h3>
+              <p>Kırım Tatar gümüş ustalarının (kuyumcularının) ince gümüş telleri büküp kaynak yaparak kemer tokaları, alınlıklar ve süs eşyaları ürettiği, sabır ve zarafet gerektiren el sanatı.</p>
+              <button class="read-more-btn" data-article="telkari"><i class="fa-solid fa-book-open"></i> Detaylı Oku</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5.3 Mimari Miras -->
+        <div class="kultur-pane" id="kultur-mimari">
+          <div class="kultur-grid">
+            <div class="glass-card kultur-card">
+              <div class="kultur-card-icon"><i class="fa-solid fa-mosque accent-gold"></i></div>
+              <h3>Bahçesaray Han Sarayı</h3>
+              <p>Kırım Hanlarının ikametgahı olan, içinde Gözyaşı Çeşmesi (Selsebil), Demir Kapı ve Altın Oda gibi harikaları barındıran, Doğu Avrupa'da ayakta kalan tek Kırım Tatar saray mimarisi örneği.</p>
+              <button class="read-more-btn" data-article="han-sarayi"><i class="fa-solid fa-book-open"></i> İncelemeyi Oku</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5.4 Gelenek & Adetler -->
+        <div class="kultur-pane" id="kultur-gelenek">
+          <div class="kultur-grid">
+            <div class="glass-card kultur-card">
+              <div class="kultur-card-icon"><i class="fa-solid fa-calendar-day accent-blue"></i></div>
+              <h3>Kırım Tatar Bayramları ve Adetleri</h3>
+              <p>Tepreş şenlikleri, Derviza hasat bayramı, Nevruz kutlamaları, misafirperverlik ritüelleri ve Kırım Tatar düğünlerindeki unutulmaz geleneklerin toplumsal yeri.</p>
+              <button class="read-more-btn" data-article="adetler"><i class="fa-solid fa-book-open"></i> Detaylı Oku</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. GELİŞTİRİCİ & NLP LABORATUVARI -->
+    <section id="gelistirici" class="tab-pane">
+      <div class="section-header">
+        <h2>📊 NLP Laboratuvarı &amp; Veri Setleri</h2>
+        <p>Kırım Tatar dili morfolojisi ve kültürel metinler üzerinde çalışmak isteyen araştırmacı ve geliştiriciler için araçlar.</p>
+      </div>
+
+      <div class="split-layout">
+        <!-- Frequency Analyzer Tool -->
+        <div class="split-col-main glass-card">
+          <h3><i class="fa-solid fa-chart-simple accent-gold"></i> Canlı Kelime Frekans Analizcisi</h3>
+          <p class="tool-desc">Depomuzdaki tüm Kırım Tatarca şiirlerin mısralarını analiz ederek en sık kullanılan kelimeleri belirler. Bir kelimeye tıklayarak geçtiği mısraları filtreleyebilirsiniz.</p>
+          
+          <div class="nlp-workspace">
+            <div class="frequency-chart-container">
+              <h4>En Sık Geçen 12 Kelime</h4>
+              <div class="freq-list" id="freq-words-list">
+                <!-- Loaded dynamically -->
+              </div>
+            </div>
+            
+            <div class="corpus-viewer-container">
+              <h4>Korpus Arama Sonuçları</h4>
+              <p class="corpus-info-text" id="corpus-word-info">Grafikten bir kelime seçiniz.</p>
+              <div class="corpus-results" id="corpus-results-lines">
+                <!-- Matches show here -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Downloads & Documentation -->
+        <div class="split-col-side glass-card">
+          <h3><i class="fa-solid fa-download accent-blue"></i> Veri Setlerini İndir</h3>
+          <p>Kültürel verilerimizin güncel sürümlerine JSON ve CSV formatında erişebilirsiniz.</p>
+          
+          <div class="download-buttons-group">
+            <a href="Veri_Setleri/JSON/siirler.json" download class="btn-download"><i class="fa-solid fa-file-json"></i> siirler.json <span class="size-tag">(JSON)</span></a>
+            <a href="Veri_Setleri/JSON/yazarlar.json" download class="btn-download"><i class="fa-solid fa-file-json"></i> yazarlar.json <span class="size-tag">(JSON)</span></a>
+            <a href="Veri_Setleri/CSV/siirler.csv" download class="btn-download"><i class="fa-solid fa-file-csv"></i> siirler.csv <span class="size-tag">(CSV)</span></a>
+            <a href="Veri_Setleri/CSV/yazarlar.csv" download class="btn-download"><i class="fa-solid fa-file-csv"></i> yazarlar.csv <span class="size-tag">(CSV)</span></a>
+          </div>
+
+          <div class="dev-note">
+            <h4>💡 Entegrasyon Örneği (Python)</h4>
+            <pre><code>import json
+with open("siirler.json", "r", encoding="utf-8") as f:
+    siirler = json.load(f)
+print(f"Toplam şiir: {len(siirler)}")</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Document Modal (For reading articles) -->
+  <div class="modal" id="document-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-overlay" id="modal-overlay-bg"></div>
+    <div class="modal-wrapper">
+      <div class="modal-header">
+        <h2 id="modal-title">Makale Başlığı</h2>
+        <button class="modal-close" id="modal-close-btn" aria-label="Kapat"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Loaded dynamically -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary" id="modal-close-bottom">Kapat</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Author Detail Modal -->
+  <div class="modal" id="author-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-overlay" id="author-modal-overlay"></div>
+    <div class="modal-wrapper">
+      <div class="modal-header">
+        <h2 id="author-modal-title">Yazar Adı</h2>
+        <button class="modal-close" id="author-modal-close-btn" aria-label="Kapat"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="author-modal-profile">
+          <div class="author-avatar-big" id="author-modal-avatar">
+            <i class="fa-solid fa-feather-pointed"></i>
+          </div>
+          <div class="author-modal-metadata">
+            <p><strong>Unvan:</strong> <span id="author-modal-unvan">Profesör, Dil Bilimci</span></p>
+            <p><strong>Ömür:</strong> <span id="author-modal-years">1893 - 1937</span></p>
+            <p><strong>Doğum Yeri:</strong> <span id="author-modal-birthplace">Karasubazar, Kırım</span></p>
+          </div>
+        </div>
+        <div class="author-modal-details">
+          <h4>Hakkında</h4>
+          <p id="author-modal-bio">Biyografi detayları...</p>
+          <h4>Başyapıtları</h4>
+          <ul id="author-modal-works">
+            <!-- Dynamic works list -->
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary" id="author-modal-close-bottom">Kapat</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Bahçesaray Miras</h3>
+        <p>Kırım Tatar dilini, edebiyatını ve tarihini korumayı amaçlayan açık kaynaklı bir kültür arşivi ve araştırma platformudur.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Bağlantılar</h4>
+        <ul>
+          <li><a href="https://github.com/arch-yunus/Bahcesaray-Miras" target="_blank"><i class="fa-brands fa-github"></i> GitHub Deposu</a></li>
+          <li><a href="#kesfet" class="footer-nav-link" data-tab="kesfet">Ana Sayfa</a></li>
+          <li><a href="#edebiyat" class="footer-nav-link" data-tab="edebiyat">Edebiyat Arşivi</a></li>
+          <li><a href="#gelistirici" class="footer-nav-link" data-tab="gelistirici">Veri Geliştiricileri</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Bahçesaray-Miras Projesi. <a href="https://github.com/arch-yunus/Bahcesaray-Miras/blob/main/LICENSE" target="_blank">MIT Lisansı</a> ile lisanslanmıştır.</p>
+    </div>
+  </footer>
+
+  <!-- App Logic script -->
+  <script src="app.js"></script>
+</body>
+</html>

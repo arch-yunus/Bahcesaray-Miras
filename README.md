@@ -4,6 +4,10 @@
 
 # 🕌 Bahcesaray-Miras
 
+🌐 **[İnteraktif Dijital Kültür Portalı'nı Keşfedin!](https://arch-yunus.github.io/Bahcesaray-Miras/)**
+*(Şiirleri satır satır çevirileriyle karşılaştırın, kültür öncülerinin biyografilerine göz atın ve NLP tabanlı canlı kelime analizcimizi tarayıcınızda deneyimleyin!)*
+
+
 > *"Ant etkenmen, söz bergenmen millet içün ölmege, / Bilip, körip milletimniñ köz yaşını silmege..."*
 > — **Numan Çelebicihan** (Kırım Tatar Milli Marşı / Ant Etkenmen)
 
@@ -90,7 +94,14 @@ Depomuzdaki verilerin yazılım projelerinde kolayca kullanılabilmesi amacıyla
 ### 📂 Dosya Yapıları
 1. **[`siirler.json`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Veri_Setleri/JSON/siirler.json)**: Şiirlerin Kırım Tatarca orijinal ve Türkçe tercüme satırlarını, yazım yılını ve yazarını tutar.
 2. **[`yazarlar.json`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Veri_Setleri/JSON/yazarlar.json)**: Yazarların biyografik bilgilerini, unvanlarını ve başyapıtlarını tutar.
-3. **[`yazarlar.csv`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Veri_Setleri/CSV/yazarlar.csv)**: Tablosal veri analizi için yazarlar listesinin CSV biçimi.
+3. **[`siirler.csv`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Veri_Setleri/CSV/siirler.csv)**: Şiirlerin tablosal analizler için CSV formatındaki versiyonu (otomatik üretilir).
+4. **[`yazarlar.csv`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Veri_Setleri/CSV/yazarlar.csv)**: Tablosal veri analizi için yazarlar listesinin CSV biçimi (otomatik üretilir).
+
+### ⚙️ Veri Senkronizasyonu
+Arşivdeki JSON verileri ile CSV dosyalarını güncel tutmak için bir senkronizasyon scripti bulunmaktadır. Veri setlerinde değişiklik yaptıktan sonra aşağıdaki komutla CSV'leri otomatik olarak güncelleyebilirsiniz:
+```bash
+python scripts/sync_data.py
+```
 
 ### 🐍 Örnek Python Entegrasyonu
 Verileri okumak ve Kırım Tatarca şiirlerde kelime frekansı analizi yapmak için aşağıdaki basit scripti kullanabilirsiniz:
@@ -141,8 +152,8 @@ Bu arşivdeki verilerin uzun ömürlü, taşınabilir ve standartlara uygun olma
 
 * [x] **Faz 1:** Depo mimarisinin kurgulanması, açık kaynak vizyonunun duyurulması ve tanıtım bannerlarının tasarımı.
 * [x] **Faz 2:** Temel edebi eserlerin, destanların, yazar biyografilerinin ve ilk şiir metinlerinin depoya eklenmesi.
-* [ ] **Faz 3:** Topluluk katkılarıyla arşivin genişletilmesi (PR'ların kabulü) ve sözlü tarih derlemelerinin eklenmesi.
-* [ ] **Faz 4:** Dijitalleştirilmiş metinlerin açık bir "Kültür API'si" altyapısına dönüştürülmesi.
+* [x] **Faz 3:** İnteraktif Dijital Kültür Portalı web arayüzünün (SPA) geliştirilmesi, dil analiz aracının eklenmesi ve otomatik GitHub Pages CI/CD entegrasyonu.
+* [ ] **Faz 4:** Arşivin topluluk katkılarıyla genişletilmesi, sözlü tarih derlemelerinin eklenmesi ve verilerin açık bir "Kültür API" altyapısına dönüştürülmesi.
 
 ---
 
