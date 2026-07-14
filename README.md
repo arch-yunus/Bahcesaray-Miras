@@ -2,11 +2,10 @@
   <img src="Multimedya/Gorsel_Arsiv/project_header_banner.png" alt="Bahcesaray Miras Banner" width="100%">
 </p>
 
-# 🕌 Bahcesaray-Miras
+# 🕌 Bahçesaray Miras: Kırım Tatar Dijital Kültür Arşivi ve Portalı
 
 🌐 **[İnteraktif Dijital Kültür Portalı'nı Keşfedin!](https://arch-yunus.github.io/Bahcesaray-Miras/)**
 *(Şiirleri satır satır çevirileriyle karşılaştırın, kültür öncülerinin biyografilerine göz atın ve NLP tabanlı canlı kelime analizcimizi tarayıcınızda deneyimleyin!)*
-
 
 > *"Ant etkenmen, söz bergenmen millet içün ölmege, / Bilip, körip milletimniñ köz yaşını silmege..."*
 > — **Numan Çelebicihan** (Kırım Tatar Milli Marşı / Ant Etkenmen)
@@ -17,73 +16,99 @@
 > *"Tuvğan yerim, seni terk etip ketsem de, cüregimniñ yarısı sende qaldı."*
 > — **Bekir Sıtkı Çoban-zade** (Kırım Şiirleri)
 
-Bahcesaray-Miras, Kırım Tatar halkının yüzyıllar boyunca ilmek ilmek işlediği zengin kültürel mirasını, edebi eserlerini, sanatını, sözlü halk folklorunu, mimarisini ve tarihi dokusunu dijital dünyada ölümsüzleştirmeyi hedefleyen açık kaynaklı bir araştırma, koruma ve dijital hafıza deposudur.
+Bahçesaray Miras; Kırım Tatar halkının yüzyıllar boyunca ilmek ilmek işlediği zengin kültürel mirasını, edebi eserlerini, sanatını, sözlü halk folklorunu, mimarisini ve tarihi dokusunu dijital dünyada ölümsüzleştirmeyi hedefleyen açık kaynaklı bir araştırma, koruma ve dijital hafıza deposudur. Bu platform, sürgünler ve baskılarla yok edilmeye çalışılan bir halkın kültürel belleğini modern bilişim araçlarıyla geleceğe taşımak için kurgulanmıştır.
 
 ---
 
 ## 📌 İçindekiler
 
-1. [📖 Vizyon ve Amaç](#-vizyon-ve-amaç)
-2. [🗂️ Sistem Mimarisi ve Dizin Yapısı](#%EF%B8%8F-sistem-mimarisi-ve-dizin-yapısı)
-3. [🏛️ Tarih ve Kültürel Miras Özetleri](#%EF%B8%8F-tarih-ve-kültürel-miras-özetleri)
+1. [📖 Vizyon ve Kapsam](#-vizyon-ve-kapsam)
+2. [🗂️ Depo Mimarisi ve Dizin Yapısı](#%EF%B8%8F-depo-mimarisi-ve-dizin-yapısı)
+3. [🏛️ Tarih ve Kültürel Miras Detayları](#%EF%B8%8F-tarih-ve-kültürel-miras-detayları)
+   - [⏳ Kırım Hanlığı Dönemi](#-kırım-hanlığı-dönemi)
+   - [🥀 18 Mayıs 1944 Sürgünü](#-18-mayıs-1944-sürgünü)
+   - [🔱 Semboller ve Geleneksel El Sanatları](#-semboller-ve-geleneksel-el-sanatları)
+   - [🎵 Sözlü Folklor ve Müzik](#-sözlü-folklor-ve-müzik)
 4. [📊 Veri Setleri ve Geliştirici Kılavuzu](#-veri-setleri-ve-geliştirici-kılavuzu)
-5. [⚙️ Teknik Altyapı ve Veri Standartları](#%EF%B8%8F-teknik-altyapı-ve-veri-standartları)
+   - [📂 JSON Veri Şemaları](#-json-veri-şemaları)
+   - [⚙️ Senkronizasyon Betiği](#%EF%B8%8F-senkronizasyon-betiği)
+   - [🐍 İleri Seviye Python Entegrasyonları](#-i̇leri-seviye-python-entegrasyonları)
+5. [🖥️ İnteraktif Web Portalı Teknik Mimarisi](#%EF%B8%8F-i̇nteraktif-web-portalı-teknik-mimarisi)
+   - [⚙️ Yerel Çalıştırma Kılavuzu](#%EF%B8%8F-yerel-çalıştırma-kılavuzu)
+   - [🚀 CI/CD ve Yayınlama Süreci](#-cicd-ve-yayınlama-süreci)
 6. [🚀 Yol Haritası (Roadmap)](#-yol-haritası-roadmap)
-7. [🤝 Katkı Rehberi (Contributing)](#-katkı-rehberi-contributing)
-8. [✒️ Kültür Hazinesinden İnciler](#%EF%B8%8F-kültür-hazinesinden-i̇nciler)
-9. [📜 Lisans](#-lisans)
+7. [🤝 Katkı Sağlama Rehberi (Contributing)](#-katkı-sağlama-rehberi-contributing)
+8. [✒️ Kültür Hazinesinden Seçkin Alıntılar](#%EF%B8%8F-kültür-hazinesinden-seçkin-alıntılar)
+9. [📚 Akademik Referanslar ve Kaynakça](#-akademik-referanslar-ve-kaynakça)
+10. [📜 Lisans](#-lisans)
 
 ---
 
-## 📖 Vizyon ve Amaç
+## 📖 Vizyon ve Kapsam
 
 > *"Milletlerin kalbi edebiyattır, edebiyatsız millet dilsiz insana benzer."*
 > — **İsmail Gaspıralı** (Edebi Makaleler)
 
-> *"Közüñ aç, ey şanlı millet, baq cihanğa da uyan, / Yer yüzünde qalmasın hiç kök kökünden ağlamağan!"*
-> — **Amdi Giraybay** (Yiğitlerge)
+İsmail Gaspıralı'nın *"Dilde, fikirde, işte birlik"* şiarından aldığımız ilhamla, Kırım Tatar edebi metinlerini, sanatsal formlarını, geleneksel el sanatlarını ve mitolojik unsurları dijital ortamda bir araya getiriyoruz. Projenin ana hedefleri şunlardır:
 
-İsmail Gaspıralı'nın *"Dilde, fikirde, işte birlik"* şiarından aldığımız ilhamla, dünyanın dört bir yanına dağılmış Kırım Tatar edebi metinlerini, sanatsal formlarını, geleneksel el sanatlarını ve mitolojik unsurları tek bir çatı altında topluyoruz.
-
-* 🎓 **Araştırmacılar İçin:** Doğrulanmış, akademik referanslara dayanan tarihi, edebi ve kültürel metinlere kolay, hızlı ve ücretsiz erişim.
-* 💻 **Geliştiriciler İçin:** Kırım Tatar dili, morfolojisi ve kültürü üzerine yapılacak doğal dil işleme (NLP), yapay zeka ve makine öğrenmesi projeleri için yapılandırılmış (JSON/CSV) veri setleri.
-* 🏺 **Kültür Elçileri İçin:** Geleneksel sanatların, destanların, yırların, çıñların ve unutulmaya yüz tutmuş halk adetlerinin dijital ekosistemde yaşatılması.
+* 🎓 **Akademik Araştırmacılar İçin:** Doğrulanmış kaynaklara ve akademik referanslara dayanan tarihi, edebi ve kültürel metinlere hızlı, yapılandırılmış ve ücretsiz erişim sağlamak.
+* 💻 **Yazılım Geliştiricileri İçin:** Kırım Tatar dili, morfolojisi ve kültürü üzerine yapılacak Doğal Dil İşleme (NLP), Yapay Zeka (AI) ve Makine Öğrenmesi (ML) projeleri için hazır yapılandırılmış (JSON/CSV) veri setleri sunmak.
+* 🏺 **Kültür Elçileri ve Topluluk İçin:** Geleneksel sanatların, destanların, yırların, çıñların ve unutulmaya yüz tutmuş halk adetlerinin dijital ekosistemde yaşatılmasını ve genç nesillere aktarılmasını sağlamak.
 
 ---
 
-## 🗂️ Sistem Mimarisi ve Dizin Yapısı
+## 🗂️ Depo Mimarisi ve Dizin Yapısı
 
-> *"Seniñ içün, tuvğan tilim, neler yapmam, neler etmem! / Seniñ içün, tuvğan tilim, kerek olsa, canım berem!"*
-> — **Bekir Çoban-zade** (Tuvğan Til)
+Proje dosyaları, modüler ve geliştirici dostu bir yapıda organize edilmiştir. Aşağıdaki dizin ağacında projenin güncel hiyerarşik yapısı yer almaktadır:
 
-> *"Bir kün kelir bu divarlar yıkılır, / Milletimniñ zincirleri kırılır. / Bahçesaray baçalarında cır yırlap, / Vatanımda adaletler kurulur."*
-> — **Eşref Şemi-zade** (Közyaş Divarı)
-
-* 📚 **[`/Edebiyat`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Edebiyat)**: Klasik ve modern şiirler, destanlar, yazar/şair biyografileri ve zengin [Edebi Alıntılar](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Edebiyat/Edebi_Alintilar.md) koleksiyonu.
-  * *Örnek Metinler:* [Ant Etkenmen](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Edebiyat/Siirler/Ant_Etkenmen.md), [Tuvğan Til](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Edebiyat/Siirler/Tuvgan_Til.md), [Yiğitlerge](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Edebiyat/Siirler/Yigitlerge.md), [Gözleve](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Edebiyat/Siirler/Gozleve.md).
-* 🎨 **[`/Sanat_ve_Zanaat`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Sanat_ve_Zanaat)**: Ahşap ve taş oymacılığı, telkari sanatı, mimari detaylar ve milli sembollerin köken analizleri.
-  * *Tarihi Sembol Araştırması:* [Tarak-Tamga Analizi](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Sanat_ve_Zanaat/Tarak_Tamga/Tarak_Tamga.md).
-  * *Mimari İnceleme:* [Bahçesaray Han Sarayı](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Sanat_ve_Zanaat/Mimari/Bahcesaray_Han_Sarayi.md).
-* 🐉 **[`/Mitoloji_ve_Folklor`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Mitoloji_ve_Folklor)**: Çora Batır, Altın Beşik gibi destanların varyasyonları, efsaneler, masallar ve geleneksel halk inançları.
-  * *Destanlar:* [Çora Batır Destanı](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Mitoloji_ve_Folklor/Destanlar/Cora_Batir.md), [Altın Beşik Efsanesi](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Mitoloji_ve_Folklor/Destanlar/Altin_Besik.md).
-* ⏳ **[`/Tarih_ve_Surgun`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Tarih_ve_Surgun)**: Hanlık dönemi siyasi belgeleri, yarlıklar, tarihi makaleler ve 18 Mayıs 1944 Sürgünü'ne (Sürgünlik) dair araştırmalar.
-  * *Tarih Panoraması:* [Kırım Hanlığı Tarihi](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Tarih_ve_Surgun/Hanlik_Donemi/Kirim_Hanligi.md).
-  * *Büyük Sürgün Araştırması:* [18 Mayıs 1944 Sürgünlik](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Tarih_ve_Surgun/Surgun_1944/18_Mayis_1944.md).
-* 🎵 **[`/Multimedya`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Multimedya)**: Görsel arşivler, geleneksel müzik notaları, derlenmiş yır/çıñ ses kayıtları ve tanıtım bannerları.
-* 📊 **[`/Veri_Setleri`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Veri_Setleri)**: Geliştiriciler için hazırlanmış makine okumasına uygun formatlanmış (JSON/CSV) kültürel metin verileri.
+```
+Bahcesaray-Miras/
+├── .github/                  # GitHub Actions CI/CD iş akışları
+├── Edebiyat/                 # Edebiyat arşivi
+│   ├── Biyografiler/        # Kültür öncülerinin yaşam öyküleri
+│   ├── Destanlar/           # Yazıya geçirilmiş halk destanları
+│   ├── Siirler/             # Orijinal ve Türkçe çevirili şiirler
+│   ├── Tercuman_Gazetesi/   # İsmail Gaspıralı dönemi yayınları
+│   ├── Edebi_Alintilar.md   # Seçkin mısralar koleksiyonu
+│   └── README.md
+├── Mitoloji_ve_Folklor/      # Efsaneler, masallar ve halk inançları
+├── Multimedya/               # Multimedya varlıkları
+│   └── Gorsel_Arsiv/        # Proje görsel varlıkları ve banner'lar
+├── Sanat_ve_Zanaat/          # Geleneksel sanatlar ve mimari incelemeler
+│   ├── Mimari/              # Hansaray vb. tarihi eser mimari detayları
+│   └── Tarak_Tamga/         # Sembolik köken analizleri
+├── Tarih_ve_Surgun/          # Tarihi belgeler ve araştırmalar
+│   ├── Hanlik_Donemi/       # Kırım Hanlığı dönemi
+│   └── Surgun_1944/         # Sürgünlik tarihi vesikaları
+├── Veri_Setleri/             # Geliştiriciler için veri setleri
+│   ├── CSV/                 # CSV formatlı tablolar
+│   └── JSON/                # JSON formatlı yapılandırılmış veriler
+├── scripts/                  # Yardımcı otomasyon betikleri
+│   └── sync_data.py         # JSON'dan CSV'ye veri senkronizasyonu
+├── index.html                # İnteraktif Portal ana arayüzü
+├── style.css                 # Arayüz tasarım stilleri (Glassmorphism)
+├── app.js                    # Portalın istemci tarafındaki ana mantığı
+└── README.md                 # Proje ana tanıtım belgesi
+```
 
 ---
 
-## 🏛️ Tarih ve Kültürel Miras Özetleri
+## 🏛️ Tarih ve Kültürel Miras Detayları
 
-### ⏳ Kırım Hanlığı (1441 - 1783)
-Cengiz Han soyundan gelen Giray Hanedanı tarafından kurulan Kırım Hanlığı, Karadeniz'in kuzeyinde yüzyıllar boyunca egemenliğini sürdürmüştür. Osmanlı İmparatorluğu ile kurduğu özel askeri ve diplomatik ittifak sayesinde Doğu Avrupa politikasında kritik rol oynamıştır. Hanlığın zengin entelektüel hayatı, 1783 yılında Rus Çarlığı tarafından ilhak edilmesiyle büyük bir darbe almıştır.
+### ⏳ Kırım Hanlığı Dönemi (1441 - 1783)
+Cengiz Han soyundan gelen Giray Hanedanı tarafından kurulan Kırım Hanlığı, Karadeniz'in kuzeyinde yüzyıllar boyunca egemenliğini sürdürmüştür. Osmanlı İmparatorluğu ile kurduğu özel askeri ve diplomatik ittifak sayesinde Doğu Avrupa politikasında kritik rol oynamıştır. Bahçesaray, Akmescit, Gözleve ve Karasubazar gibi kentler; medreseleri, sarayları, hanları ve kütüphaneleriyle İslam medeniyetinin kuzeydeki en önemli entelektüel merkezleri haline gelmiştir. Bu zengin dönem, 1783 yılında Rus Çarlığı tarafından gerçekleştirilen ilhakla son bulmuştur.
 
 ### 🥀 18 Mayıs 1944 Sürgünü (Sürgünlik)
-Stalin rejimi tarafından "kolektif ihanet" iddiasıyla suçlanan yaklaşık 200 bin Kırım Tatarı, tek bir gecede tren vagonlarına doldurularak Özbekistan, Kazakistan ve Sibirya'ya sürgün edilmiştir. Yolculuk şartları ve sürgün bölgelerindeki ağır koşullar nedeniyle nüfusun yaklaşık %46'sı ilk yıllarda hayatını kaybetmiştir. Kırım Tatarları, barışçıl insan hakları mücadeleleri sayesinde 1989'dan sonra vatanlarına dönebilmişlerdir.
+Stalin rejimi tarafından "kolektif ihanet" iddiasıyla suçlanan yaklaşık 200 bin Kırım Tatarı, tek bir gecede (18 Mayıs 1944) vatanlarından koparılarak tren vagonlarına doldurulmuş ve Özbekistan, Kazakistan ile Sibirya'ya sürgün edilmiştir. Yolculuk esnasındaki gayriinsani şartlar ve sürgün bölgelerindeki ağır zorunlu çalışma koşulları sebebiyle nüfusun yaklaşık %46'sı ilk yıllarda hayatını kaybetmiştir. Kırım Tatarları, dünyada benzeri az görülen barışçıl insan hakları mücadeleleri sayesinde 1989 yılından itibaren vatanlarına geri dönmeye başlayabilmişlerdir.
 
-### 🔱 Tarak-Tamga Sembolü
-Mengli Giray Han döneminden bu yana Kırım Tatar egemenliğinin sembolü olan bu üç dişli arma, teraziyi (adalet ve dengeyi) simgeler. Günümüzde gök mavisi zeminli milli bayrağın üzerinde altın sarısı rengiyle yer alır.
+### 🔱 Semboller ve Geleneksel El Sanatları
+* **Tarak-Tamga:** Mengli Giray Han döneminden bu yana Kırım Tatar egemenliğinin sembolü olan bu üç dişli arma, teraziyi (adalet ve dengeyi) simgeler. Günümüzde gök mavisi zeminli milli bayrağın üzerinde altın sarısı rengiyle yer alır.
+* **Kuyumculuk ve Telkari:** İnce gümüş veya altın tellerin bükülerek işlenmesiyle yapılan telkari sanatı, Kırım Tatar kadınlarının geleneksel takılarında (kuşak, göğüslük) doruk noktasına ulaşmıştır.
+* **Tatar İşlemesi (Nakış):** Altın ve gümüş ipliklerle kadife veya ipek kumaş üzerine yapılan geleneksel işlemeler, bitkisel motifler (öşek, gül vb.) içerir ve her motifin kendine özgü sembolik bir anlamı vardır.
+
+### 🎵 Sözlü Folklor ve Müzik
+* **Yırlar ve Çıñlar:** Kırım Tatar halk edebiyatında melodik şarkılara *yır*, irticali (doğaçlama) olarak söylenen ikişer satırlık kafiyeli manilere ise *çıñ* denir. Çıñlar, düğünlerde ve şenliklerde atışma şeklinde söylenir.
+* **Halk Çalgıları:** Dümbelek, keman, zurna ve geleneksel bir üflemeli çalgı olan kaval Kırım Tatar ezgilerinin temelini oluşturur.
 
 ---
 
@@ -91,21 +116,76 @@ Mengli Giray Han döneminden bu yana Kırım Tatar egemenliğinin sembolü olan 
 
 Depomuzdaki verilerin yazılım projelerinde kolayca kullanılabilmesi amacıyla yapılandırılmış veri setleri sunuyoruz.
 
-### 📂 Dosya Yapıları
-1. **[`siirler.json`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Veri_Setleri/JSON/siirler.json)**: Şiirlerin Kırım Tatarca orijinal ve Türkçe tercüme satırlarını, yazım yılını ve yazarını tutar.
-2. **[`yazarlar.json`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Veri_Setleri/JSON/yazarlar.json)**: Yazarların biyografik bilgilerini, unvanlarını ve başyapıtlarını tutar.
-3. **[`siirler.csv`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Veri_Setleri/CSV/siirler.csv)**: Şiirlerin tablosal analizler için CSV formatındaki versiyonu (otomatik üretilir).
-4. **[`yazarlar.csv`](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Veri_Setleri/CSV/yazarlar.csv)**: Tablosal veri analizi için yazarlar listesinin CSV biçimi (otomatik üretilir).
+### 📂 JSON Veri Şemaları
 
-### ⚙️ Veri Senkronizasyonu
-Arşivdeki JSON verileri ile CSV dosyalarını güncel tutmak için bir senkronizasyon scripti bulunmaktadır. Veri setlerinde değişiklik yaptıktan sonra aşağıdaki komutla CSV'leri otomatik olarak güncelleyebilirsiniz:
+#### 1. Şiirler Veri Seti (`siirler.json`)
+Her şiir kaydı aşağıdaki JSON şemasına uygun olarak saklanır:
+```json
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": { "type": "string", "description": "Benzersiz tanımlayıcı (ör: ant_etkenmen)" },
+      "baslik": { "type": "string", "description": "Kırım Tatarca başlık" },
+      "turkce_baslik": { "type": "string", "description": "Türkiye Türkçesi başlık" },
+      "yazar": { "type": "string", "description": "Şairin adı ve soyadı" },
+      "yil": { "type": "integer", "description": "Yazım veya yayın yılı" },
+      "tur": { "type": "string", "description": "Eserin türü (Şiir, Destan vb.)" },
+      "orijinal_metin": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Kırım Tatarca mısralar dizisi"
+      },
+      "turkce_tercume": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Eş zamanlı mısra bazlı Türkçe tercüme dizisi"
+      }
+    },
+    "required": ["id", "baslik", "yazar", "yil", "tur", "orijinal_metin", "turkce_tercume"]
+  }
+}
+```
+
+#### 2. Yazarlar Veri Seti (`yazarlar.json`)
+Yazarların biyografik bilgileri şu şema ile sunulmaktadır:
+```json
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "ad": { "type": "string", "description": "Yazarın adı ve soyadı" },
+      "dogum_yili": { "type": "integer", "description": "Doğum yılı" },
+      "olum_yili": { "type": "integer", "description": "Ölüm yılı" },
+      "dogum_yeri": { "type": "string", "description": "Doğum yeri" },
+      "unvan": { "type": "string", "description": "Mesleki ve edebi unvanları" },
+      "ana_eserler": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "En bilinen başyapıtları"
+      },
+      "hakkinda": { "type": "string", "description": "Detaylı biyografik özet" }
+    },
+    "required": ["ad", "dogum_yili", "olum_yili", "dogum_yeri", "unvan", "ana_eserler", "hakkinda"]
+  }
+}
+```
+
+### ⚙️ Senkronizasyon Betiği
+
+JSON formatındaki veriler üzerinde düzenleme yapıldıktan sonra, bu verileri tablosal analizlere uygun CSV biçimine dönüştürmek için projedeki Python otomasyon scriptini çalıştırabilirsiniz:
+
 ```bash
 python scripts/sync_data.py
 ```
 
-### 🐍 Örnek Python Entegrasyonu
-Verileri okumak ve Kırım Tatarca şiirlerde kelime frekansı analizi yapmak için aşağıdaki basit scripti kullanabilirsiniz:
+Bu script, `Veri_Setleri/JSON/` altındaki dosyaları okur, doğrular ve `Veri_Setleri/CSV/` altındaki karşılık gelen CSV dosyalarını otomatik olarak günceller.
 
+### 🐍 İleri Seviye Python Entegrasyonları
+
+#### Örnek 1: Şiirlerde Kelime Frekansı Analizi
 ```python
 import json
 import collections
@@ -125,54 +205,93 @@ kelimeler = re.findall(r'\b\w+\b', tum_metin.lower())
 
 # En sık geçen 10 kelimeyi bul
 kelime_sayilari = collections.Counter(kelimeler)
+print("--- En Sık Geçen 10 Kelime ---")
 for kelime, frekans in kelime_sayilari.most_common(10):
     print(f"{kelime}: {frekans} kez")
 ```
 
+#### Örnek 2: Şiir ve Yazar Eşleştirmeli Arama Modülü
+```python
+import json
+
+def yazar_eserlerini_bul(yazar_adi):
+    with open("Veri_Setleri/JSON/siirler.json", "r", encoding="utf-8") as f:
+        siirler = json.load(f)
+    
+    yazar_siirleri = [s for s in siirler if yazar_adi.lower() in s["yazar"].lower()]
+    
+    print(f"\n=== {yazar_adi} Eserleri ({len(yazar_siirleri)} adet) ===")
+    for s in yazar_siirleri:
+        print(f"- {s['baslik']} ({s['yil']}) - Tür: {s['tur']}")
+
+yazar_eserlerini_bul("İsmail Bey Gaspıralı")
+yazar_eserlerini_bul("Bekir Sıtkı Çoban-zade")
+```
+
 ---
 
-## ⚙️ Teknik Altyapı ve Veri Standartları
+## 🖥️ İnteraktif Web Portalı Teknik Mimarisi
 
-> *"İş bilmek, iş görmek, iş başarmak gerek. Boş laf karın doyurmaz."*
-> — **İsmail Gaspıralı** (Toplumsal Kalkınma Yazıları)
+Kırım Tatar kültürel verilerini son kullanıcıya çekici bir tasarımla sunmak üzere geliştirilen portal, bir Tek Sayfa Uygulaması (SPA) olarak kurgulanmıştır.
 
-Bu arşivdeki verilerin uzun ömürlü, taşınabilir ve standartlara uygun olması için:
+* **Arayüz Tasarımı:** Google Fonts (Outfit & Playfair Display) tipografisi kullanılarak, modern cam efekti (**Glassmorphism**) ve yumuşak geçişli arka plan gradyanları ile tasarlanmıştır. CSS Custom Properties sayesinde tüm renk şeması modülerdir.
+* **Performans:** İstemci tarafında çalışan (Client-Side Rendering) Vanilla JavaScript yapısı sayesinde harici hiçbir büyük JS framework'üne (React, Vue vb.) ihtiyaç duymaz, anında yüklenir ve yüksek SEO skoru sağlar.
+* **NLP & Arama:** Kullanıcı yazmaya başladığı anda tüm şiirlerde, yazarlarda ve tarihi makalelerde istemci düzeyinde anlık kelime eşleşmesi sağlayan yerleşik bir arama motoru içerir.
 
-* Metinler **Markdown (`.md`)** formatında ve **UTF-8** kodlamasında hazırlanır.
-* Araştırmaların ve belgelerin sonuna mutlak surette akademik referans/kaynakça eklenir.
-* Görsel dizinleri, kendi içlerindeki açıklayıcı mini `README.md` dosyalarıyla belgelenir.
-* Veri setleri, şemalarıyla birlikte yapılandırılmış bir biçimde sunulur.
+### ⚙️ Yerel Çalıştırma Kılavuzu
+
+Portalı kendi bilgisayarınızda yerel olarak çalıştırmak ve üzerinde değişiklik yapmak oldukça basittir:
+
+1. Projeyi bilgisayarınıza klonlayın:
+   ```bash
+   git clone https://github.com/arch-yunus/Bahcesaray-Miras.git
+   cd Bahcesaray-Miras
+   ```
+2. Tarayıcıların güvenlik kısıtlamaları (CORS) nedeniyle JSON dosyalarının yerel olarak okunabilmesi için projeyi bir yerel web sunucusu ile çalıştırmanız gerekir. Terminalden aşağıdaki komutlardan birini çalıştırın:
+   * **Python 3 ile:**
+     ```bash
+     python -m http.server 8000
+     ```
+   * **Node.js (http-server) ile:**
+     ```bash
+     npx http-server -p 8000
+     ```
+3. Tarayıcınızdan `http://localhost:8000` adresine gidin.
+
+### 🚀 CI/CD ve Yayınlama Süreci
+
+Proje, ana dala (`main`) gönderilen her başarılı güncellemeden sonra otomatik olarak çalışan bir GitHub Actions iş akışına sahiptir. Bu iş akışı:
+1. Kod kalitesini denetler.
+2. Web portalını derleyerek doğrudan GitHub Pages üzerinden yayına alır: **[https://arch-yunus.github.io/Bahcesaray-Miras/](https://arch-yunus.github.io/Bahcesaray-Miras/)**
 
 ---
 
 ## 🚀 Yol Haritası (Roadmap)
 
-> *"Vatanlarında ölmeyenler, vatanlarının toprağına gömülmeyenler, hiçbir zaman gerçekten ölmüş sayılmazlar."*
-> — **Cengiz Dağcı** (Yurdunu Kaybeden Adam)
-
-* [x] **Faz 1:** Depo mimarisinin kurgulanması, açık kaynak vizyonunun duyurulması ve tanıtım bannerlarının tasarımı.
+* [x] **Faz 1:** Depo mimarisinin kurgulanması, açık kaynak vizyonunun duyurulması ve tanıtım banner'larının tasarlanması.
 * [x] **Faz 2:** Temel edebi eserlerin, destanların, yazar biyografilerinin ve ilk şiir metinlerinin depoya eklenmesi.
 * [x] **Faz 3:** İnteraktif Dijital Kültür Portalı web arayüzünün (SPA) geliştirilmesi, dil analiz aracının eklenmesi ve otomatik GitHub Pages CI/CD entegrasyonu.
 * [ ] **Faz 4:** Arşivin topluluk katkılarıyla genişletilmesi, sözlü tarih derlemelerinin eklenmesi ve verilerin açık bir "Kültür API" altyapısına dönüştürülmesi.
+* [ ] **Faz 5:** Sesli yır/çıñ kayıtları için konuşma tanıma (Speech-to-Text) modellerinin entegrasyonu ve Tercüman Gazetesi arşivinin OCR ile dijitalleştirilmesi.
 
 ---
 
-## 🤝 Katkı Rehberi (Contributing)
+## 🤝 Katkı Sağlama Rehberi (Contributing)
 
-> *"Dilde, fikirde, işte birlik!"*
-> — **İsmail Gaspıralı** (Tercüman Gazetesi şiarı)
-
-Bu arşiv kolektif bir hafızadır. Yeni belgeler eklemek, tarihi metinleri transkript etmek veya var olan araştırmaları zenginleştirmek için herkesin katkısına açıktır:
+Bu arşiv, Kırım Tatar halkının kolektif hafızasıdır. Yeni belgeler eklemek, tarihi metinleri transkript etmek veya var olan araştırmaları zenginleştirmek için herkesin katkısına açıktır:
 
 1. Depoyu **"Fork"**layın.
 2. Üzerinde çalışacağınız konuya uygun yeni bir dal (branch) oluşturun: `git checkout -b kultur/CoraBatirDestani`
-3. Değişikliklerinizi anlamlı bir mesajla **"Commit"**leyin: `git commit -m 'Eklenti: Çora Batır destanının Kırım Tatarca orijinal metni eklendi'`
-4. Dalınıza **"Push"**layın: `git push origin kultur/CoraBatirDestani`
-5. Bir **"Pull Request (PR)"** başlatın.
+3. Katkı kurallarına dikkat ederek değişikliklerinizi yapın:
+   * **Edebi Metin Standartları:** Kırım Tatarca Latin Alfabesi yazım kurallarına riayet edilmeli, mısralar satır satır çevirileriyle eşleştirilmelidir.
+   * **Akademik Referans:** Eklenen her tarihi makale ve biyografi güvenilir kaynaklarla desteklenmeli, kaynakça eklenmelidir.
+4. Değişikliklerinizi anlamlı bir mesajla **"Commit"**leyin: `git commit -m 'Eklenti: Çora Batır destanının Kırım Tatarca orijinal metni eklendi'`
+5. Dalınıza **"Push"**layın: `git push origin kultur/CoraBatirDestani`
+6. Bir **"Pull Request (PR)"** başlatın ve incelememizi bekleyin.
 
 ---
 
-## ✒️ Kültür Hazinesinden İnciler (Seçkin Alıntılar)
+## ✒️ Kültür Hazinesinden Seçkin Alıntılar
 
 | Yazar / Şair | Alıntı | Eser / Kaynak |
 | :--- | :--- | :--- |
@@ -185,10 +304,20 @@ Bu arşiv kolektif bir hafızadır. Yeni belgeler eklemek, tarihi metinleri tran
 | **Şakir Selim** | *"Kırım demek – yeşil beşik demektir, / Kırım demek – ana sütü demektir."* | *Kırım* |
 | **Aşık Ümer** | *"Al yeşil giyinip süslenip çıksın, / Gözleve'nin güzel elâ gözlüsü."* | *Gözleve Koşması* |
 
-Daha fazla alıntıya ulaşmak için **[Edebi Alıntılar](file:///g:/Di%C4%9Fer%20bilgisayarlar/Diz%C3%BCst%C3%BC%20Bilgisayar%C4%B1m/github%20repolar%C4%B1m/Bahcesaray-Miras/Edebiyat/Edebi_Alintilar.md)** sayfamızı ziyaret edebilirsiniz.
+---
+
+## 📚 Akademik Referanslar ve Kaynakça
+
+Projedeki tarihi ve kültürel bilgiler aşağıdaki temel akademik kaynaklar temel alınarak derlenmiştir:
+
+1. **İnalcık, Halil** (2010). *Kırım Hanlığı Tarihi Araştırmaları*. İstanbul: Türkiye İş Bankası Kültür Yayınları.
+2. **Fisher, Alan W.** (1978). *The Crimean Tatars*. Stanford: Hoover Institution Press.
+3. **Gaspıralı, İsmail** (2003). *Dilde, Fikirde, İşte Birlik (Seçme Eserleri)*. Haz. Hakan Kırımlı. Ankara: TİKA Yayınları.
+4. **Çoban-zade, Bekir** (1927). *Kırım Tatar Edebiyatı Tarihi Dersleri*. Akmescit.
+5. **Kırımlı, Hakan** (1996). *National Movements and National Identity Among the Crimean Tatars (1905-1916)*. Leiden: E.J. Brill.
 
 ---
 
 ## 📜 Lisans
 
-Bu proje [MIT Lisansı](https://www.google.com/search?q=LICENSE) altında lisanslanmıştır. Bilginin ve kültürün özgürce paylaşılmasını, bilimsel araştırmalarda kullanılmasını ve korunmasını destekliyoruz.
+Bu proje [MIT Lisansı](https://opensource.org/licenses/MIT) altında lisanslanmıştır. Bilginin ve kültürün özgürce paylaşılmasını, bilimsel araştırmalarda kullanılmasını ve korunmasını destekliyoruz.

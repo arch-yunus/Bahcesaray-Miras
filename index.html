@@ -136,6 +136,28 @@
           </div>
         </div>
       </div>
+      
+      <!-- Kırım Tatar Kültür Yarışması -->
+      <div class="quiz-section glass-card">
+        <div class="quiz-header">
+          <div class="quiz-title-group">
+            <h2><i class="fa-solid fa-trophy accent-gold"></i> Kırım Tatar Kültür Yarışması</h2>
+            <p>Miras portalındaki bilgilerden derlenen sorularla Kırım Tatar tarihi, edebiyatı ve folkloru hakkındaki bilginizi test edin!</p>
+          </div>
+          <div class="quiz-stats" id="quiz-status-bar" style="display:none;">
+            Soru: <span id="quiz-current-question-num">1</span> / <span id="quiz-total-questions-num">5</span>
+          </div>
+        </div>
+        
+        <div class="quiz-container" id="quiz-main-container">
+          <div class="quiz-welcome-state">
+            <i class="fa-solid fa-circle-question quiz-start-icon accent-blue"></i>
+            <h3>Kültürel Miras Yolculuğuna Başlayın</h3>
+            <p>Kırım Hanlığı'ndan sürgüne, şairlerin şiirlerinden el sanatlarına kadar uzanan 5 soruluk eğlenceli bir test.</p>
+            <button class="btn-primary" id="btn-start-quiz">Yarışmayı Başlat</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 2. EDEBİYAT & ŞİİRLER -->
@@ -242,7 +264,87 @@
             <span class="timeline-date">1989</span>
             <h3>Vatana Dönüş Hareketi</h3>
             <p>Mustafa Abdülcemil Kırımoğlu ve milli hareket liderlerinin öncülüğünde yürütülen barışçıl insan hakları mücadelesi sonucunda Kırım Tatarları kitlesel olarak anavatanları Kırım'a dönmeye başladı.</p>
-            <button class="read-more-btn" data-article="milli-hareket"><i class="fa-solid fa-book-open"></i> Detaylı Oku</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kırım Kültürel Coğrafyası ve Haritası -->
+      <div class="map-section-title glass-card">
+        <h2><i class="fa-solid fa-map-marked-alt accent-gold"></i> Kırım Kültürel Coğrafyası ve Haritası</h2>
+        <p>Aşağıdaki interaktif haritada tarihi Kırım şehirlerinin üzerine tıklayarak bu merkezlerin Kırım Tatar kültür, mimari ve edebiyat tarihindeki yerini inceleyebilirsiniz.</p>
+      </div>
+      
+      <div class="map-container glass-card">
+        <div class="map-visual">
+          <svg id="crimea-svg-map" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Outline of Crimea Peninsula (approximated, artistic representation styled with neon/gradient look) -->
+            <path d="M 50,230 C 70,220 90,200 110,210 C 130,220 150,230 180,220 C 210,210 240,160 260,150 C 280,140 290,130 300,100 C 310,70 320,60 330,50 C 340,40 350,45 355,50 C 360,55 362,80 370,90 C 378,100 400,105 420,100 C 440,95 460,90 480,100 C 500,110 520,120 540,115 C 560,110 580,115 590,120 C 600,125 610,135 620,140 C 630,145 640,145 650,150 C 660,155 690,160 720,165 C 750,170 770,175 780,185 C 790,195 785,200 775,205 C 765,210 740,205 725,210 C 710,215 700,225 690,235 C 680,245 660,250 645,255 C 630,260 610,258 590,260 C 570,262 550,265 540,270 C 530,275 510,285 490,290 C 470,295 450,298 430,300 C 410,302 380,310 360,320 C 340,330 320,335 300,340 C 280,345 260,350 245,355 C 230,360 210,365 190,370 C 170,375 160,370 150,365 C 140,360 145,350 142,340 C 139,330 130,325 120,320 C 110,315 100,320 90,315 C 80,310 75,295 70,280 C 65,265 55,250 50,230 Z" 
+                  fill="rgba(56, 189, 248, 0.05)" stroke="var(--accent-blue)" stroke-width="2.5" filter="drop-shadow(0 0 8px rgba(56, 189, 248, 0.2))"/>
+            
+            <!-- Kerch Peninsula connection outline detail -->
+            <path d="M 690,235 C 700,240 720,245 735,250 C 750,255 770,260 780,265 C 790,270 795,275 790,282 C 785,289 770,290 755,288 C 740,286 720,278 705,272 C 690,266 675,260 660,255" 
+                  fill="none" stroke="var(--accent-blue)" stroke-width="2.5" stroke-dasharray="2,2"/>
+                  
+            <!-- Sea Lines/Decorative elements -->
+            <path d="M 120,80 A 150,150 0 0 1 200,120" stroke="rgba(56, 189, 248, 0.15)" stroke-width="1.5" stroke-dasharray="5,5"/>
+            <path d="M 600,350 A 200,200 0 0 1 700,380" stroke="rgba(56, 189, 248, 0.15)" stroke-width="1.5" stroke-dasharray="5,5"/>
+            
+            <!-- Map Pins (Interactive) -->
+            <!-- 1. Bahçesaray (Cwd 250, 270) -->
+            <g class="map-pin" id="pin-bahcesaray" transform="translate(250, 270)">
+              <circle r="22" fill="rgba(251, 191, 36, 0.15)" stroke="rgba(251, 191, 36, 0.4)" stroke-width="1"/>
+              <circle r="7" class="pin-dot" fill="var(--accent-gold)"/>
+              <text y="-14" text-anchor="middle" class="pin-label">Bahçesaray</text>
+            </g>
+            <!-- 2. Akmescit (Cwd 320, 240) -->
+            <g class="map-pin" id="pin-akmescit" transform="translate(320, 240)">
+              <circle r="18" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+              <circle r="6" class="pin-dot" fill="var(--accent-blue)"/>
+              <text y="-14" text-anchor="middle" class="pin-label">Akmescit</text>
+            </g>
+            <!-- 3. Gözleve (Cwd 180, 200) -->
+            <g class="map-pin" id="pin-gozleve" transform="translate(180, 200)">
+              <circle r="18" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+              <circle r="6" class="pin-dot" fill="var(--accent-blue)"/>
+              <text y="-14" text-anchor="middle" class="pin-label">Gözleve</text>
+            </g>
+            <!-- 4. Karasubazar (Cwd 390, 220) -->
+            <g class="map-pin" id="pin-karasubazar" transform="translate(390, 220)">
+              <circle r="18" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+              <circle r="6" class="pin-dot" fill="var(--accent-blue)"/>
+              <text y="-14" text-anchor="middle" class="pin-label">Karasubazar</text>
+            </g>
+            <!-- 5. Yalta (Cwd 300, 325) -->
+            <g class="map-pin" id="pin-yalta" transform="translate(300, 325)">
+              <circle r="18" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+              <circle r="6" class="pin-dot" fill="var(--accent-blue)"/>
+              <text y="-14" text-anchor="middle" class="pin-label">Yalta</text>
+            </g>
+            <!-- 6. Kefe (Cwd 500, 210) -->
+            <g class="map-pin" id="pin-kefe" transform="translate(500, 210)">
+              <circle r="18" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+              <circle r="6" class="pin-dot" fill="var(--accent-blue)"/>
+              <text y="-14" text-anchor="middle" class="pin-label">Kefe</text>
+            </g>
+            <!-- 7. Sudak (Cwd 450, 255) -->
+            <g class="map-pin" id="pin-sudak" transform="translate(450, 255)">
+              <circle r="18" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+              <circle r="6" class="pin-dot" fill="var(--accent-blue)"/>
+              <text y="-14" text-anchor="middle" class="pin-label">Sudak</text>
+            </g>
+            <!-- 8. Akyar (Cwd 200, 300) -->
+            <g class="map-pin" id="pin-akyar" transform="translate(200, 300)">
+              <circle r="18" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+              <circle r="6" class="pin-dot" fill="var(--accent-blue)"/>
+              <text y="-14" text-anchor="middle" class="pin-label">Akyar</text>
+            </g>
+          </svg>
+        </div>
+        <div class="map-info-panel" id="map-detail-panel">
+          <div class="map-empty-state">
+            <i class="fa-solid fa-map-location-dot map-placeholder-icon"></i>
+            <h3>Kültürel Coğrafya Detayı</h3>
+            <p>Tarih, edebiyat ve mimarideki önemli detayları görmek için harita üzerindeki altın ve mavi renkli şehir işaretlerine tıklayınız.</p>
           </div>
         </div>
       </div>
@@ -260,6 +362,7 @@
         <button class="kultur-tab-btn" data-kultur="sanat"><i class="fa-solid fa-palette"></i> El Sanatları &amp; Semboller</button>
         <button class="kultur-tab-btn" data-kultur="mimari"><i class="fa-solid fa-archway"></i> Mimari Miras</button>
         <button class="kultur-tab-btn" data-kultur="gelenek"><i class="fa-solid fa-masks-theater"></i> Gelenek &amp; Adetler</button>
+        <button class="kultur-tab-btn" data-kultur="muzik"><i class="fa-solid fa-music"></i> Müzik &amp; Ses Arşivi</button>
       </div>
 
       <div class="kultur-tabs-content">
@@ -320,7 +423,82 @@
               <div class="kultur-card-icon"><i class="fa-solid fa-calendar-day accent-blue"></i></div>
               <h3>Kırım Tatar Bayramları ve Adetleri</h3>
               <p>Tepreş şenlikleri, Derviza hasat bayramı, Nevruz kutlamaları, misafirperverlik ritüelleri ve Kırım Tatar düğünlerindeki unutulmaz geleneklerin toplumsal yeri.</p>
-              <button class="read-more-btn" data-article="adetler"><i class="fa-solid fa-book-open"></i> Detaylı Oku</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5.5 Müzik & Ses Arşivi -->
+        <div class="kultur-pane" id="kultur-muzik">
+          <div class="music-workspace">
+            <div class="music-player-card glass-card">
+              <div class="player-top">
+                <div class="album-art">
+                  <i class="fa-solid fa-compact-disc disc-spinning" id="player-disc-icon"></i>
+                </div>
+                <div class="track-info">
+                  <h3 id="player-track-title">Seçilen Parça</h3>
+                  <p id="player-track-artist">Sanatçı / Türü</p>
+                </div>
+              </div>
+              
+              <!-- Simulated Waveform Visualizer -->
+              <div class="visualizer-container">
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+                <div class="vis-bar"></div>
+              </div>
+              
+              <!-- Progress Bar -->
+              <div class="audio-progress-container" id="audio-progress-bar">
+                <div class="audio-progress-filled" id="audio-progress-filled"></div>
+              </div>
+              <div class="player-time-display">
+                <span id="player-time-current">0:00</span>
+                <span id="player-time-total">0:00</span>
+              </div>
+              
+              <!-- Audio Controls -->
+              <div class="player-controls">
+                <button class="control-btn" id="btn-prev-track" title="Önceki Parça"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="control-btn play-btn" id="btn-play-pause" title="Oynat/Duraklat"><i class="fa-solid fa-play"></i></button>
+                <button class="control-btn" id="btn-next-track" title="Sonraki Parça"><i class="fa-solid fa-forward-step"></i></button>
+                <div class="volume-container">
+                  <i class="fa-solid fa-volume-high" id="volume-icon"></i>
+                  <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="0.7">
+                </div>
+              </div>
+            </div>
+            
+            <div class="music-details-panel glass-card">
+              <div class="music-tabs">
+                <button class="music-sub-tab active" data-tab-type="playlist"><i class="fa-solid fa-list"></i> Parça Listesi</button>
+                <button class="music-sub-tab" data-tab-type="lyrics"><i class="fa-solid fa-align-left"></i> Edebi Çeviri &amp; Sözler</button>
+              </div>
+              
+              <div class="music-tab-content active" id="music-tab-playlist">
+                <ul class="playlist-list" id="playlist-ul">
+                  <!-- Dynamic Playlist will load here -->
+                </ul>
+              </div>
+              
+              <div class="music-tab-content" id="music-tab-lyrics">
+                <div class="lyrics-container" id="lyrics-lines-div">
+                  <p class="lyrics-placeholder">Lütfen bir parça seçin ve oynatın.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -370,12 +548,76 @@
             <a href="Veri_Setleri/CSV/yazarlar.csv" download class="btn-download"><i class="fa-solid fa-file-csv"></i> yazarlar.csv <span class="size-tag">(CSV)</span></a>
           </div>
 
-          <div class="dev-note">
-            <h4>💡 Entegrasyon Örneği (Python)</h4>
-            <pre><code>import json
-with open("siirler.json", "r", encoding="utf-8") as f:
-    siirler = json.load(f)
-print(f"Toplam şiir: {len(siirler)}")</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- NLP Gelişmiş Eğitim Modülleri -->
+      <div class="nlp-extra-section-title glass-card">
+        <h2><i class="fa-solid fa-graduation-cap accent-gold"></i> Morfolojik Analiz Simülasyonu ve Dijital Kelime Kartları</h2>
+        <p>Kırım Tatar dil yapısını, morfolojik çekim eklerini ve günlük kelime dağarcığını eğlenceli ve interaktif araçlarla keşfedin.</p>
+      </div>
+      
+      <div class="nlp-extra-grid">
+        <!-- 1. Morfolojik Analizci -->
+        <div class="glass-card nlp-extra-card">
+          <h3><i class="fa-solid fa-diagram-project accent-blue"></i> Canlı Morfolojik Analizci</h3>
+          <p class="tool-desc">Aşağıdaki kelimelerden birini seçerek veya kendi kelimenizi yazarak, Kırım Tatarca kelimelerin nasıl kök ve eklerine ayrıldığını morfolojik kurallarla görebilirsiniz.</p>
+          
+          <div class="morphology-container">
+            <div class="morphology-input-group">
+              <select id="morphology-word-select">
+                <option value="">-- Kelime Seçin --</option>
+                <option value="milletimizniñ">milletimizniñ (milletimizin)</option>
+                <option value="vatanıñdan">vatanıñdan (vatanından)</option>
+                <option value="tuvğanlığımız">tuvğanlığımız (doğmuşluğumuz / kardeşliğimiz)</option>
+                <option value="yollarında">yollarında (yollarında)</option>
+                <option value="közyaşlarıñız">közyaşlarıñız (gözyaşlarınız)</option>
+              </select>
+              <span class="or-separator">veya</span>
+              <input type="text" id="morphology-custom-input" placeholder="Kelime girin (örn: cüregimni)...">
+              <button class="btn-primary" id="btn-morphology-analyze">Analiz Et</button>
+            </div>
+            
+            <div class="morphology-result-panel" id="morphology-result-panel">
+              <div class="morphology-empty-state">
+                <p>Analiz etmek için bir kelime seçin veya yazıp "Analiz Et" butonuna basın.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 2. Kelime Kartları -->
+        <div class="glass-card nlp-extra-card">
+          <h3><i class="fa-solid fa-clone accent-gold"></i> Dijital Kelime Kartları (Vocabulary Cards)</h3>
+          <p class="tool-desc">Kırım Tatar kültüründe sıkça geçen anahtar kelimeleri öğrenmek için kartların üzerine tıklayarak Türkçe karşılıklarını ve şiirlerdeki kullanımlarını keşfedin.</p>
+          
+          <div class="vocab-cards-carousel">
+            <div class="vocab-card" id="vocab-flashcard">
+              <div class="vocab-card-inner">
+                <div class="vocab-card-front">
+                  <div class="vocab-card-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+                  <h2 id="vocab-word-tatar">Vatan</h2>
+                  <p class="vocab-word-pronunciation">/va-tan/</p>
+                  <span class="click-to-flip-text"><i class="fa-solid fa-rotate"></i> Çevirmek için tıkla</span>
+                </div>
+                <div class="vocab-card-back">
+                  <h3>Vatan / Anayurt</h3>
+                  <p class="vocab-word-meaning">Kırım Tatarları için vatan kelimesi, hem coğrafi sınırları hem de kültürel aidiyeti belirten en kutsal kavramdır.</p>
+                  <div class="vocab-word-sample">
+                    <strong>Şiirden Örnek:</strong>
+                    <p id="vocab-word-sample-text">"Bizim vatan Kırım'dır, onun toprağı altındır..."</p>
+                    <cite id="vocab-word-sample-author">— Amdi Giraybay, Yiğitlerge</cite>
+                  </div>
+                  <span class="click-to-flip-text"><i class="fa-solid fa-rotate"></i> Geri dönmek için tıkla</span>
+                </div>
+              </div>
+            </div>
+            <div class="vocab-carousel-controls">
+              <button id="btn-prev-vocab" class="control-btn" title="Önceki Kelime"><i class="fa-solid fa-arrow-left"></i></button>
+              <span id="vocab-card-counter">1 / 5</span>
+              <button id="btn-next-vocab" class="control-btn" title="Sonraki Kelime"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
           </div>
         </div>
       </div>
